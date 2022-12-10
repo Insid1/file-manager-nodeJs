@@ -1,0 +1,14 @@
+{
+  "name": "file-manager",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run start",
+    "start:me": "npm run start -- --username=Oleg"
+  },
+  "keywords": [],
+  "author": "Oleg",
+  "license": "ISC"
+}
