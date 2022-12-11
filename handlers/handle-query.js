@@ -1,13 +1,20 @@
-import {mapToEvents} from "../maps/index.js";
+import {mapToEvents} from '../maps/index.js';
+const {cwd} = process;
 
-const handleQuery = (eventEmitter, data) => {
+export default function handleQuery(eventEmitter, data) {
   const [command, ...args] = data.split(' ').filter((arg) => arg !== '');
 
+  if (data === '.exit') {
+    this.close();
+    return;
+  }
+
   if (!mapToEvents[command]) {
-    console.log('no such command, enter command due to task');
+    console.log('Invalid input');
     return;
   }
   eventEmitter.emit(command, args);
+
+  console.log(`You are currently in ${cwd()}`)
 }
 
-export default handleQuery;

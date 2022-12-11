@@ -1,4 +1,4 @@
-import {EventEmitter} from "node:events";
+import {EventEmitter} from 'node:events';
 import {mapToEvents} from '../maps/index.js'
 
 const eventEmitterLineQuery = new EventEmitter();

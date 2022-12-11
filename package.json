@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "start:me": "npm run start --username=Oleg"
+    "start:me": "npm start -- --username=Oleg"
   },
   "keywords": [],
   "author": "Oleg",
