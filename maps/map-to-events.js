@@ -1,4 +1,9 @@
-import {handleAdd, handleCat, handleCd, handleCp, handleLs, handleRn, handleUp} from "../handlers/index.js";
+import {
+  handleAdd, handleCat,
+  handleCd, handleCp,
+  handleLs, handleMv,
+  handleRn, handleUp
+} from "../handlers/index.js";
 
 const mapToEvents = {
   up: handleUp,
@@ -8,7 +13,7 @@ const mapToEvents = {
   add: handleAdd,
   rn: handleRn,
   cp: handleCp,
-  mv: (args) => console.log('not yet implemented'),
+  mv: handleMv,
   rm: (args) => console.log('not yet implemented'),
   os: (args) => console.log('not yet implemented'),
   hash: (args) => console.log('not yet implemented'),

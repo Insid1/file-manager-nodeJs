@@ -6,3 +6,4 @@ export {default as handleCat} from './handle-cat.js';
 export {default as handleAdd} from './handle-add.js';
 export {default as handleRn} from './handle-rn.js';
 export {default as handleCp} from './handle-cp.js';
+export {default as handleMv} from './handle-mv.js';
