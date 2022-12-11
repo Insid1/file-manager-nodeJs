@@ -4,3 +4,4 @@ export {default as handleCd} from './handle-cd.js';
 export {default as handleLs} from './handle-ls.js';
 export {default as handleCat} from './handle-cat.js';
 export {default as handleAdd} from './handle-add.js';
+export {default as handleRn} from './handle-rn.js';
