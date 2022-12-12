@@ -2,7 +2,7 @@ import {
   handleAdd, handleCat,
   handleCd, handleCp,
   handleLs, handleMv,
-  handleRm,
+  handleOs, handleRm,
   handleRn, handleUp
 } from "../handlers/index.js";
 
@@ -16,7 +16,7 @@ const mapToEvents = {
   cp: handleCp,
   mv: handleMv,
   rm: handleRm,
-  os: (args) => console.log('not yet implemented'),
+  os: handleOs,
   hash: (args) => console.log('not yet implemented'),
   compress: (args) => console.log('not yet implemented'),
   decompress: (args) => console.log('not yet implemented'),
