@@ -10,3 +10,5 @@ export {default as handleMv} from './handle-mv.js';
 export {default as handleRm} from './handle-rm.js';
 export {default as handleOs} from './handle-os.js';
 export {default as handleHash} from './handle-hash.js';
+export {default as handleCompress} from './handle-compress.js';
+export {default as handleDecompress} from './handle-decompress.js';

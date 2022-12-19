@@ -4,7 +4,8 @@ import {
   handleLs, handleMv,
   handleOs, handleRm,
   handleRn, handleUp,
-  handleHash,
+  handleHash, handleCompress,
+  handleDecompress,
 } from "../handlers/index.js";
 
 const mapToEvents = {
@@ -19,8 +20,8 @@ const mapToEvents = {
   rm: handleRm,
   os: handleOs,
   hash: handleHash,
-  compress: (args) => console.log('not yet implemented'),
-  decompress: (args) => console.log('not yet implemented'),
+  compress: handleCompress,
+  decompress: handleDecompress,
 }
 
 export default mapToEvents;
